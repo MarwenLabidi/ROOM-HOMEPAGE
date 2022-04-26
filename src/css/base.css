@@ -8,7 +8,7 @@
 
 			/* background-color: pink; */
 			& .introduction__navAndImages__navBar {
-				background-color: gray;
+				/* background-color: gray; */
 				display: flex;
 				position: absolute;
 				z-index: 1;
@@ -19,19 +19,22 @@
 					justify-content: center;
 					align-items: center;
 					gap: 10px;
-					position:relative;
-					top: 40px;
+					position: relative;
+					top: 5vw;
 					left: 5vw;
 
 					& .MENU {
 						object-fit: contain;
 						z-index: 2;
+						width: 5vw;
 
 					}
 
 					& .LOGO {
 						object-fit: contain;
 						margin-left: 30vw;
+						width: 15vw;
+
 					}
 				}
 
@@ -40,10 +43,10 @@
 					/* NOTE :change display here and cange padding and create aimation */
 					display: flex;
 					justify-content: center;
-					
+
 					gap: 20px;
 					position: absolute;
-					padding: 35px;
+					padding: 5vw;
 					width: 100vw;
 					margin-top: 0px;
 				}
@@ -57,18 +60,39 @@
 					background-color: black;
 
 					& .introduction__navAndImages__SlidesImgaes__container__slide1 {
-						background-color: red;
+						background-color: green;
 						position: absolute;
+						width: 100%;
+						height: 75vw;
+						& img{
+							width: 100%;
+							height: 100%;
+						}
+
+						/* transform: translateX(-60%); */
 
 					}
 
 					& .introduction__navAndImages__SlidesImgaes__container__slide2 {
 						background-color: blue;
 						position: absolute;
+						width: 100%;
+						height: 75vw;
+						& img{
+							width: 100%;
+							height: 100%;
+						}
+						/* transform: translateX(-30%); */
+
 					}
 
 					& .introduction__navAndImages__SlidesImgaes__container__slide3 {
 						background-color: pink;
+						height: 75vw;
+						& img{
+							width: 100%;
+							height: 100%;
+						}
 
 					}
 
@@ -81,17 +105,35 @@
 					position: absolute;
 					bottom: 0;
 					right: 0;
-					display:flex;
-					gap:25px;
-					padding:15px 25px;
+					display: flex;
+					gap: 25px;
+					padding: 15px 25px;
 				}
 			}
 
 		}
 
 		& .introduction__description {
-			background-color: green;
+			margin: 13vw;
+			& h1{
+				font-size: clamp(30px, 3vw, 72px);
+
+			}
+			& p{
+				font-size: clamp(16px, 3vw, 30px);
+
+			}
+
 
 		}
 	}
+}
+
+.about__description {
+	margin: 13vw;
+	font-size: clamp(16px, 3vw, 30px);
+}
+
+.about  img{
+	width: 100%;
 }
