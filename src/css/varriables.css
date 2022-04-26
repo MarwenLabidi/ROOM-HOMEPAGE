@@ -1,0 +1,14 @@
+:root{  
+	/* fonts varriables */
+	--ff_Spartan:'League Spartan', sans-serif;
+
+	/* colors variables */
+	--clr_Gray-100:hsl(0, 0%, 63%);
+	--clr_Gray-200:hsl(0, 0%, 27%);
+	--clr_Black:hsl(0, 0%, 0%);
+	--clr_White:hsl(0, 0%, 100%);
+}
+
+@custom-media --small (width <= 400px);
+@custom-media --tablets (width <= 700px);
+@custom-media --desktop (width >= 900px);
