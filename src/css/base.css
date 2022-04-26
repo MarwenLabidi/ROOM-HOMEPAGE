@@ -1,3 +1,97 @@
-body {
+#app {
 	font-family: var(--ff_Spartan);
+
+	& .introduction {
+
+		/* background-color: red; */
+		& .introduction__navAndImages {
+
+			/* background-color: pink; */
+			& .introduction__navAndImages__navBar {
+				background-color: gray;
+				display: flex;
+				position: absolute;
+				z-index: 1;
+
+				& .introduction__navAndImages__navBar__logo {
+					/* background-color:green; */
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+					position:relative;
+					top: 40px;
+					left: 5vw;
+
+					& .MENU {
+						object-fit: contain;
+						z-index: 2;
+
+					}
+
+					& .LOGO {
+						object-fit: contain;
+						margin-left: 30vw;
+					}
+				}
+
+				& .introduction__navAndImages__navBar__list {
+					background-color: red;
+					/* NOTE :change display here and cange padding and create aimation */
+					display: flex;
+					justify-content: center;
+					
+					gap: 20px;
+					position: absolute;
+					padding: 35px;
+					width: 100vw;
+					margin-top: 0px;
+				}
+			}
+
+			& .introduction__navAndImages__SlidesImgaes {
+				background-color: blue;
+
+				& .introduction__navAndImages__SlidesImgaes__container {
+					position: relative;
+					background-color: black;
+
+					& .introduction__navAndImages__SlidesImgaes__container__slide1 {
+						background-color: red;
+						position: absolute;
+
+					}
+
+					& .introduction__navAndImages__SlidesImgaes__container__slide2 {
+						background-color: blue;
+						position: absolute;
+					}
+
+					& .introduction__navAndImages__SlidesImgaes__container__slide3 {
+						background-color: pink;
+
+					}
+
+
+				}
+
+				& .introduction__navAndImages__SlidesImgaes__changeImageComponents {
+					background-color: black;
+					z-index: 1;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					display:flex;
+					gap:25px;
+					padding:15px 25px;
+				}
+			}
+
+		}
+
+		& .introduction__description {
+			background-color: green;
+
+		}
+	}
 }
