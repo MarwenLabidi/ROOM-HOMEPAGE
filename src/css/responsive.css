@@ -1,0 +1,83 @@
+@media (--desktop) {
+
+
+	#app{
+		height: 100vh;
+		overflow: hidden;
+	}
+	.introduction {
+		display: flex;
+		height: 65vh;
+		
+		& .introduction__navAndImages{
+			
+			height: 65vh !important;
+			width: 100% !important;
+			& .introduction__navAndImages__SlidesImgaes__container__slide1{
+				height: 65vh !important;
+			}
+			& .introduction__navAndImages__SlidesImgaes__container__slide2{
+				height: 65vh !important;
+			}
+			& .introduction__navAndImages__SlidesImgaes__container__slide3{
+				height: 65vh !important;
+			}
+			
+		}
+
+		/* NOTE HIDE NAVbAR */
+		& .introduction__navAndImages__navBar__list {
+			display: none !important;
+		}
+		& .introduction__description{
+			margin:0 !important;
+			/* padding:50px 190px; */
+			width: 53%;
+			padding: 50px 83px;
+
+			align-self: center;
+			
+			& h1 {
+				font-size: 45px !important;
+				font-weight:600;
+			}
+			& p {
+				font-size: 16px !important;
+			}
+		}
+	}
+
+	.about {
+		display: flex;
+		/* justify-content: space-between; */
+		height: 35vh !important;
+
+		& .about__twoBlackChairsWithTable {
+			background-color: green;
+			width:30%;
+			& img{
+
+				min-height:260px;
+			}
+		}
+		
+		& .about__description {
+			margin : 0;
+			font-size: 15px !important;
+			flex-grow: 1;
+			width:35%;
+			padding:50px;
+			align-self: center;
+			max-height:260px;
+		}
+
+		& .about__singleWhiteChair {
+			bakcground-color: green;
+			width:30%;
+			& img{
+
+				min-height:260px;
+			}
+		}
+	}
+}

@@ -72,6 +72,7 @@
 						position: absolute;
 						width: 100%;
 						height: 75vw;
+						min-width: 650px;
 						& img{
 							width: 100%;
 							height: 100%;
@@ -86,6 +87,7 @@
 						position: absolute;
 						width: 100%;
 						height: 75vw;
+						min-width: 650px;
 						& img{
 							width: 100%;
 							height: 100%;
@@ -97,6 +99,7 @@
 					& .introduction__navAndImages__SlidesImgaes__container__slide3 {
 						background-color: pink;
 						height: 75vw;
+						min-width: 650px;
 						& img{
 							width: 100%;
 							height: 100%;
