@@ -127,11 +127,11 @@
 		& .introduction__description {
 			margin: 13vw;
 			& h1{
-				font-size: clamp(30px, 3vw, 72px);
+				font-size: clamp(30px, 3vw, 45px);
 
 			}
 			& p{
-				font-size: clamp(16px, 3vw, 30px);
+				font-size: clamp(16px, 3vw, 16px);
 
 			}
 
