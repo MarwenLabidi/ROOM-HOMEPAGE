@@ -11,4 +11,4 @@
 
 @custom-media --small (width <= 400px);
 @custom-media --tablets (width <= 700px);
-@custom-media --desktop (width >= 900px);
+@custom-media --desktop (width >= 910px);

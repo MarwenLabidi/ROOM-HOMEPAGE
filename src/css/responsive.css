@@ -1,6 +1,4 @@
 @media (--desktop) {
-
-
 	#app{
 		height: 100vh;
 		overflow: hidden;
@@ -24,7 +22,6 @@
 			}
 			
 		}
-
 		/* NOTE HIDE NAVbAR */
 		& .introduction__navAndImages__navBar__list {
 			display: none !important;
@@ -34,7 +31,7 @@
 			/* padding:50px 190px; */
 			width: 53%;
 			padding: 50px 83px;
-
+			min-width: 360px !important;
 			align-self: center;
 			
 			& h1 {
@@ -46,20 +43,18 @@
 			}
 		}
 	}
-
 	.about {
 		display: flex;
 		flex-wrap: wrap;
-
 		/* justify-content: space-between; */
 		height: 35vh !important;
-
 		& .about__twoBlackChairsWithTable {
 			background-color: green;
 			width:30%;
 			& img{
+				height:100%;
 
-				min-height:300px;
+				/* min-height:440px; */
 			}
 		}
 		
@@ -72,13 +67,11 @@
 			align-self: center;
 			max-height:260px;
 		}
-
 		& .about__singleWhiteChair {
-			bakcground-color: green;
 			width:30%;
 			& img{
-
-				min-height:300px;
+				height:100%;
+				/* min-height:440px; */
 			}
 		}
 	}
