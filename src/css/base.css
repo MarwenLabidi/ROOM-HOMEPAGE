@@ -125,7 +125,7 @@
 				}
 
 				& .introduction__navAndImages__SlidesImgaes__changeImageComponents {
-					background-color: black;
+					/* background-color: black; */
 					z-index: 1;
 					position: absolute;
 					bottom: 0;
@@ -135,16 +135,35 @@
 					/* padding: 1.5vw 3.3vw; */
 
 					& .leftButton{
-						background-color: red;
+						background-color: black;
 						height:150%;
 						width: 50%;
+						padding: 1.5vw 3vw;
 					}
 					& .rightButton{
-						background-color: green;
+						background-color: black;
 						height:150%;
 						width: 50%;
+						padding: 1.5vw 3vw;
 					}
-					
+					& .leftButton:hover{
+						cursor: pointer;
+						filter: contrast(0.7);
+
+					}
+					& .rightButton:hover{
+						cursor: pointer;
+						filter: contrast(0.7);
+
+					}
+					& .leftButton:active{
+						transform: scale(0.9);
+
+					}
+					& .rightButton:active{
+						transform: scale(0.9);
+
+					}
 				}
 			}
 
