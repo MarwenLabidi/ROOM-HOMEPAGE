@@ -1,76 +1,124 @@
 @media (--desktop) {
-	#app{
+	#app {
 		height: 100vh;
 		overflow: hidden;
 	}
+
 	.introduction {
-		display: flex;
-		height: 65vh;
-		
-		& .introduction__navAndImages{
-			
-			height: 65vh !important;
-			width: 100% !important;
-			& .introduction__navAndImages__SlidesImgaes__container__slide1{
-				height: 65vh !important;
-			}
-			& .introduction__navAndImages__SlidesImgaes__container__slide2{
-				height: 65vh !important;
-			}
-			& .introduction__navAndImages__SlidesImgaes__container__slide3{
-				height: 65vh !important;
-			}
-			
-		}
-		/* NOTE HIDE NAVbAR */
-		& .introduction__navAndImages__navBar__list {
+		& .MENU {
 			display: none !important;
 		}
-		& .introduction__description{
-			margin:0 !important;
+		& .introduction__navAndImages__SlidesImgaes__changeImageComponents {
+			transform: translateX(100%);
+		}
+
+		& .introduction__navAndImages__navBar {
+			/* transform: translateX(-80%) !important; */
+			/* background-color:green; */
+			padding: 0;
+		}
+
+		& .introduction__navAndImages__navBar__list {
+			position: relative !important;
+
+			justify-content: flex-start !important;
+			/* align-items: center !important; */
+			/* align-self: center !important; */
+			/* transform: translateX(55px) !important; */
+		}
+
+		& .introduction__navAndImages__navBar__logo {
+			/* background-color: green; */
+
+			/* justify-content: flex-start !important; */
+			width: 150px !important;
+			justify-content: flex-start !important;
+			align-items: flex-start !important;
+			& .LOGO {
+				margin: 0 !important;
+			}
+		}
+
+		display: flex;
+		height: 65vh;
+
+		& .introduction__navAndImages {
+
+			height: 65vh !important;
+			width: 85% !important;
+
+			& .introduction__navAndImages__SlidesImgaes__container__slide1 {
+				height: 65vh !important;
+			}
+
+			& .introduction__navAndImages__SlidesImgaes__container__slide2 {
+				height: 65vh !important;
+			}
+
+			& .introduction__navAndImages__SlidesImgaes__container__slide3 {
+				height: 65vh !important;
+			}
+
+		}
+
+		/* NOTE HIDE NAVbAR */
+		& .introduction__navAndImages__navBar__list {
+			/* display: none !important; */
+			background-color: transparent !important;
+
+		}
+
+		& .introduction__description {
+			margin: 0 !important;
 			/* padding:50px 190px; */
 			width: 53%;
 			padding: 50px 83px;
 			min-width: 360px !important;
 			align-self: center;
-			
+
 			& h1 {
 				/* font-size: 45px !important; */
-				font-weight:600;
+				font-weight: 500;
 			}
+
 			& p {
 				/* font-size: 16px !important; */
 			}
 		}
 	}
+
 	.about {
 		display: flex;
 		flex-wrap: wrap;
 		/* justify-content: space-between; */
 		height: 35vh !important;
+
 		& .about__twoBlackChairsWithTable {
 			background-color: green;
-			width:30%;
-			& img{
-				height:100%;
+			width: 30%;
+
+			& img {
+				height: 100%;
 
 				/* min-height:440px; */
 			}
 		}
-		
+
 		& .about__description {
-			margin : 0;
+			margin: 0;
 			font-size: 15px !important;
 			flex-grow: 1;
-			width:35%;
-			padding:50px;
+			width: 35%;
+			padding: 50px;
 			align-self: center;
-			max-height:260px;
+			max-height: 260px;
 		}
+
 		& .about__singleWhiteChair {
-			width:30%;
-			& img{
-				height:100%;
+			width: 30%;
+
+			& img {
+				height: 100%;
 				/* min-height:440px; */
 			}
 		}
