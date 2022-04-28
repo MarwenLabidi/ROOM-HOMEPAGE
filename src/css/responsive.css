@@ -8,8 +8,10 @@
 		& .MENU {
 			display: none !important;
 		}
+		/* NOTE CHANGEIMAGE */
 		& .introduction__navAndImages__SlidesImgaes__changeImageComponents {
 			transform: translateX(100%);
+			/* gap: 50px !important; */
 		}
 
 		& .introduction__navAndImages__navBar {
@@ -20,6 +22,12 @@
 
 		& .introduction__navAndImages__navBar__list {
 			position: relative !important;
+			opacity: 1 !important;
+			pointer-events: auto !important;
+			& a{
+				color:var(--clr_White) !important;
+
+			}
 
 			justify-content: flex-start !important;
 			/* align-items: center !important; */
@@ -82,7 +90,7 @@
 			}
 
 			& p {
-				/* font-size: 16px !important; */
+				font-size: 18px !important;
 			}
 		}
 	}
