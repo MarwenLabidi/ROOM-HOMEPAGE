@@ -67,6 +67,7 @@
 			& .introduction__navAndImages__SlidesImgaes {
 				--transition-value-firstSlide:0%;
 				--transition-value-secondeSlide:0%;
+				
 
 				& .introduction__navAndImages__SlidesImgaes__container {
 					position: relative;
@@ -82,6 +83,7 @@
 							width: 100%;
 							height: 100%;
 						}
+						transition: all 1s ease-in-out;
 
 						transform: translateX(var(--transition-value-firstSlide));
 
@@ -97,6 +99,7 @@
 							width: 100%;
 							height: 100%;
 						}
+						transition: all 1s ease-in-out;
 						transform: translateX(var(--transition-value-secondeSlide));
 
 					}
