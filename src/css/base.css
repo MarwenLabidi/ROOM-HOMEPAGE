@@ -3,18 +3,15 @@
 
 	& .introduction {
 
-		/* background-color: red; */
 		& .introduction__navAndImages {
 
-			/* background-color: pink; */
 			& .introduction__navAndImages__navBar {
-				/* background-color: gray; */
 				display: flex;
 				position: absolute;
 				z-index: 1;
+				
 
 				& .introduction__navAndImages__navBar__logo {
-					/* background-color:green; */
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -43,17 +40,10 @@
 
 				& .introduction__navAndImages__navBar__list {
 					background-color: white;
-					/* NOTE :change display here and cange padding and create aimation */
-					/* NOTE CHENGE NONE TO FLEX */
 					display: flex;
-					/* NOTE CHANGE THE OPACITY  OTHER WHT BUT YOU SHOULD STOP CLICKING ON IT */
 					opacity: 0;
 					pointer-events: none;
-
 					justify-content: flex-end;
-					/* NOTE : WHEN YOU CLICK THE MENU CREATE THIS SHADOW */
-					/* box-shadow: 0px 5px 0px 800vh rgba(0, 0, 0, 0.5); */
-
 					gap: 40px;
 					position: absolute;
 					padding: 5vw;
@@ -75,7 +65,8 @@
 			}
 
 			& .introduction__navAndImages__SlidesImgaes {
-				background-color: blue;
+				--transition-value-firstSlide:0%;
+				--transition-value-secondeSlide:0%;
 
 				& .introduction__navAndImages__SlidesImgaes__container {
 					position: relative;
@@ -92,7 +83,7 @@
 							height: 100%;
 						}
 
-						/* transform: translateX(-60%); */
+						transform: translateX(var(--transition-value-firstSlide));
 
 					}
 
@@ -106,7 +97,7 @@
 							width: 100%;
 							height: 100%;
 						}
-						/* transform: translateX(-30%); */
+						transform: translateX(var(--transition-value-secondeSlide));
 
 					}
 
@@ -259,4 +250,8 @@
 	100% {
 		transform: translateX(0px);
 	}
+}
+
+ShowME{
+	opacity: 1;
 }

@@ -72,6 +72,7 @@
 		/* NOTE HIDE NAVbAR */
 		& .introduction__navAndImages__navBar__list {
 			/* display: none !important; */
+			box-shadow: none !important;
 			background-color: transparent !important;
 
 		}
