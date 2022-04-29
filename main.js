@@ -22,8 +22,9 @@ if (window.matchMedia("(max-width: 1000px)").matches) {
 
 const leftButton = document.querySelector('.leftButton');
 const rightButton = document.querySelector('.rightButton');
-const contentParagraph=document.querySelector('.introduction__description__paragraph');
+const contentParagraph = document.querySelector('.introduction__description__paragraph');
 const contentTitle = document.querySelector('.introduction__description__title');
+const slides = document.querySelector('.introduction__navAndImages__SlidesImgaes')
 
 const data = {
 	titles: [`Discover innovative ways to decorate`,
@@ -66,14 +67,14 @@ const changeButtonStatus = (() => {
 })()
 
 const loadDataToTheDom = () => {
-	
+
 	contentParagraph.innerHTML = data.description[trackData];
 	contentTitle.innerHTML = data.titles[trackData];
 
 }
 
 
-let trackData=0
+let trackData = 0
 changeButtonStatus._disableButton(leftButton);
 leftButton.addEventListener('click', (() => {
 	return () => {
@@ -82,9 +83,16 @@ leftButton.addEventListener('click', (() => {
 			changeButtonStatus._enableButton(rightButton);
 			changeButtonStatus._disableButton(leftButton);
 		}
-		
+
 		trackData--;
 		loadDataToTheDom();
+		if (trackData == 0) {
+
+			slides.style.setProperty("--transition-value-firstSlide", '0%');
+		} else {
+
+			slides.style.setProperty("--transition-value-secondeSlide", '0%');
+		}
 
 	}
 })())
@@ -94,9 +102,18 @@ rightButton.addEventListener('click', (() => {
 		if (trackData == 1) {
 			changeButtonStatus._disableButton(rightButton);
 		}
-		
+
 		trackData++;
 		loadDataToTheDom();
+		if (trackData == 1) {
+
+			slides.style.setProperty("--transition-value-firstSlide", '-100%');
+		} else {
+
+			slides.style.setProperty("--transition-value-secondeSlide", '-100%');
+		}
+
+
 
 	}
 })())
